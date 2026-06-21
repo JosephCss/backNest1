@@ -10,3 +10,19 @@ Content-Type: application/json
     
    
 }
+
+### Login sin conexion a bdd
+
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{ 
+    "name": "prueba2",
+    "email": "admin@gmail.com",
+    "password": "1234567"
+}
+
+
+### users
+GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlkIjoxLCJpYXQiOjE3ODIwNjU5NDMsImV4cCI6MTc4MjA2NjAwM30.gFG91aKpx0fkIAF1m-gemBB-XyZXOjf8eAzYQAW4XzQ

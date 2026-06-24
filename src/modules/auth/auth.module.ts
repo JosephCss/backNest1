@@ -9,6 +9,7 @@ import { JwtStrategy } from './jwt.strategy';
     secret: 'MI CODIGO SECRETO',
     signOptions: { expiresIn: '60S' },
   })],
+  exports: [JwtModule],
   controllers: [AuthController],
   providers: [AuthService, JwtStrategy]
 })
